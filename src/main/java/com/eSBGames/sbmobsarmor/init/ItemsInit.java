@@ -29,7 +29,7 @@ import java.util.ArrayList;
 public class ItemsInit
 {
 	public static final List<Item> ITEMS = new ArrayList<Item>();
-	
+
 	//skeleton
 	public static final ToolMaterial MATERIAL_BONE = EnumHelper.addToolMaterial("material_bone", 2, 59, 6.0F, 2.0F, 14);
 	public static final ItemSword BONE_SWORD = new ToolSword("bone_sword", MATERIAL_BONE);
@@ -44,4 +44,9 @@ public class ItemsInit
 	public static final Item BONE_CHESTPLATE = new ArmorBase("bone_chestplate", ARMOR_MATERIAL_BONE, 1, EntityEquipmentSlot.CHEST);
 	public static final Item BONE_LEGGINGS = new ArmorBase("bone_leggings", ARMOR_MATERIAL_BONE, 2, EntityEquipmentSlot.LEGS);
 	public static final Item BONE_BOOTS = new ArmorBase("bone_boots", ARMOR_MATERIAL_BONE, 1, EntityEquipmentSlot.FEET);
+	
+	public static final Item BONE_WITHER_HELMET = new ArmorBase("bone_wither_helmet", ARMOR_MATERIAL_BONE, 1, EntityEquipmentSlot.HEAD);
+	public static final Item BONE_WITHER_CHESTPLATE = new ArmorBase("bone_wither_chestplate", ARMOR_MATERIAL_BONE, 1, EntityEquipmentSlot.CHEST);
+	public static final Item BONE_WITHER_LEGGINGS = new ArmorBase("bone_wither_leggings", ARMOR_MATERIAL_BONE, 2, EntityEquipmentSlot.LEGS);
+	public static final Item BONE_WITHER_BOOTS = new ArmorBase("bone_wither_boots", ARMOR_MATERIAL_BONE, 1, EntityEquipmentSlot.FEET);
 }

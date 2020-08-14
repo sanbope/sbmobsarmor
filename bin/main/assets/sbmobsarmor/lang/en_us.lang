@@ -7,10 +7,16 @@ item.bone_bow.name=Bone Bow
 item.bone_axe.name=Bone Axe
 
 //armor
+//skeleton
 item.bone_helmet.name=Bone Helmet
 item.bone_chestplate.name=Bone Chest Plate
 item.bone_leggings.name=Bone Leggings
 item.bone_boots.name=Bone Boots
+//wither
+item.bone_wither_helmet.name=Bone Wither Helmet
+item.bone_wither_chestplate.name=Bone Wither Chest Plate
+item.bone_wither_leggings.name=Bone Wither Leggings
+item.bone_wither_boots.name=Bone Wither Boots
 
 //blocks
 tile.rotten_flesh_block.name=Rotten Flesh Block

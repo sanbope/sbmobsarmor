@@ -1,0 +1,20 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    
+    "ingredients":
+    [
+        {
+        	"item": "sbmobsarmor:bone_chestplate"
+        },
+        {
+        	"item": "minecraft:skull",
+        	"data": 1
+        }
+    ],
+    
+    "result":
+    {
+        "item": "sbmobsarmor:bone_wither_chestplate",
+        "count": 1
+    }
+}
