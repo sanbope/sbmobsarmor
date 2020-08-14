@@ -175,7 +175,6 @@ public class ToolBow extends ItemBow implements IHasModel
 						if (isWither)
 						{
 							entityarrow.setDamage(entityarrow.getDamage() * 2);
-							//entityLiving.addPotionEffect(new PotionEffect(MobEffects.WITHER, seconds * 20, 0, false, true));
 						} else
 						{
 							entityarrow.setDamage(entityarrow.getDamage() / 2);
