@@ -1,0 +1,28 @@
+{
+    "type": "minecraft:crafting_shaped",
+    
+    "pattern":
+    [
+        "SB ",
+        "S B",
+        "SB "
+    ],
+    
+    "key":
+    {
+        "B":
+        {
+            "item": "minecraft:bone_block"
+        },
+        "S":
+        {
+            "item": "minecraft:string"
+        }
+    },
+    
+    "result":
+    {
+        "item": "sbmobsarmor:bone_bow",
+        "count": 1
+    }
+}
