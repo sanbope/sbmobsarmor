@@ -1,8 +1,16 @@
-item.bone_sword=Bone Sword
-item.bone_shovel=Bone Shovel
-item.bone_pickaxe=Bone Pickaxe
-item.bone_hoe=Bone Hoe
-item.bone_bow=Bone Bow
-item.bone_axe=Bone Axe
+//tools
+item.bone_sword.name=Bone Sword
+item.bone_shovel.name=Bone Shovel
+item.bone_pickaxe.name=Bone Pickaxe
+item.bone_hoe.name=Bone Hoe
+item.bone_bow.name=Bone Bow
+item.bone_axe.name=Bone Axe
 
+//armor
+item.bone_helmet.name=Bone Helmet
+item.bone_chestplate.name=Bone Chest Plate
+item.bone_leggings.name=Bone Leggings
+item.bone_boots.name=Bone Boots
+
+//blocks
 tile.rotten_flesh_block.name=Rotten Flesh Block
