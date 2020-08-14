@@ -1,1 +1,8 @@
-run/
+run/config/
+run/logs/
+run/mods/
+run/resourcepacks/
+run/saves/
+run/options.txt
+run/usercache.json
+run/usernamecache.json
