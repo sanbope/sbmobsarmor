@@ -1,0 +1,24 @@
+{
+    "type": "minecraft:crafting_shaped",
+    
+    "pattern":
+    [
+        "BBB",
+        "B B",
+        "B B"
+    ],
+    
+    "key":
+    {
+        "B":
+        {
+            "item": "minecraft:ender_pearl"
+        }
+    },
+    
+    "result":
+    {
+        "item": "sbmobsarmor:ender_leggings",
+        "count": 1
+    }
+}

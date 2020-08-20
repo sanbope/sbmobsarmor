@@ -4,6 +4,7 @@ import java.util.List;
 
 import com.eSBGames.sbmobsarmor.SBMobsArmor;
 import com.eSBGames.sbmobsarmor.items.armor.ArmorBase;
+import com.eSBGames.sbmobsarmor.items.other.EnderStick;
 import com.eSBGames.sbmobsarmor.items.tools.ToolAxe;
 import com.eSBGames.sbmobsarmor.items.tools.ToolBow;
 import com.eSBGames.sbmobsarmor.items.tools.ToolHoe;
@@ -58,4 +59,13 @@ public class ItemsInit
 	public static final Item BONE_WITHER_CHESTPLATE = new ArmorBase("bone_wither_chestplate", ARMOR_MATERIAL_BONE_WITHER, 1, EntityEquipmentSlot.CHEST);
 	public static final Item BONE_WITHER_LEGGINGS = new ArmorBase("bone_wither_leggings", ARMOR_MATERIAL_BONE_WITHER, 2, EntityEquipmentSlot.LEGS);
 	public static final Item BONE_WITHER_BOOTS = new ArmorBase("bone_wither_boots", ARMOR_MATERIAL_BONE_WITHER, 1, EntityEquipmentSlot.FEET);
+	
+	//ender
+	public static final ArmorMaterial ARMOR_MATERIAL_ENDER = EnumHelper.addArmorMaterial("armor_material_ender", SBMobsArmor.MOD_ID + ":ender", 33, new int[]{3, 6, 8, 3}, 10, SoundEvents.ITEM_ARMOR_EQIIP_ELYTRA, 2f);
+	public static final Item ENDER_HELMET = new ArmorBase("ender_helmet", ARMOR_MATERIAL_ENDER, 1, EntityEquipmentSlot.HEAD);
+	public static final Item ENDER_CHESTPLATE = new ArmorBase("ender_chestplate", ARMOR_MATERIAL_ENDER, 1, EntityEquipmentSlot.CHEST);
+	public static final Item ENDER_LEGGINGS = new ArmorBase("ender_leggings", ARMOR_MATERIAL_ENDER, 2, EntityEquipmentSlot.LEGS);
+	public static final Item ENDER_BOOTS = new ArmorBase("ender_boots", ARMOR_MATERIAL_ENDER, 1, EntityEquipmentSlot.FEET);
+	
+	public static final Item ENDER_STICK = new EnderStick("ender_stick");
 }
