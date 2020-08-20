@@ -48,34 +48,9 @@ public class ToolBow extends ItemBow implements IHasModel
 			armorList.add(i);
 		}
 
-		int count = 0, count1 = 0;
-		String name;
+		isWither = ArmorBase.hasFullArmor(player, "wither");
 
-		for (int i = 0; i < armorList.size(); i++)
-		{
-			if (armorList.get(i).getItem() instanceof ArmorBase)
-			{
-				name = ((ArmorBase) armorList.get(i).getItem()).getName();
-				if (name.contains("bone"))
-				{
-					count++;
-					if (name.contains("wither"))
-					{
-						count1++;
-					}
-				}
-			}
-		}
-
-		if (count1 >= 4)
-		{
-			isWither = true;
-		}else
-		{
-			isWither = false;
-		}
-
-		if (count >= 4)
+		if (ArmorBase.hasFullArmor(player, "bone"))
 		{
 			ItemStack itemStack = new ItemStack(new ArrowBase(isWither));
 			return itemStack;

@@ -1,0 +1,24 @@
+{
+    "type": "minecraft:crafting_shaped",
+    
+    "pattern":
+    [
+        "   ",
+        "BBB",
+        "B B"
+    ],
+    
+    "key":
+    {
+        "B":
+        {
+            "item": "sbmobsarmor:rotten_flesh_block"
+        }
+    },
+    
+    "result":
+    {
+        "item": "sbmobsarmor:rotten_flesh_helmet",
+        "count": 1
+    }
+}

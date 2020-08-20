@@ -1,0 +1,20 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    
+    "ingredients":
+    [
+        {
+        	"item": "sbmobsarmor:bone_helmet"
+        },
+        {
+        	"item": "minecraft:skull",
+        	"data": 1
+        }
+    ],
+    
+    "result":
+    {
+        "item": "sbmobsarmor:bone_wither_helmet",
+        "count": 1
+    }
+}

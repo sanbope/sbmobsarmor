@@ -1,0 +1,29 @@
+//tools
+item.bone_sword.name=Bone Sword
+item.bone_shovel.name=Bone Shovel
+item.bone_pickaxe.name=Bone Pickaxe
+item.bone_hoe.name=Bone Hoe
+item.bone_bow.name=Bone Bow
+item.bone_axe.name=Bone Axe
+
+//armor
+//rotten flesh
+item.rotten_flesh_helmet.name=Rotten Flesh Helmet
+item.rotten_flesh_chestplate.name=Rotten Flesh Chest Plate
+item.rotten_flesh_leggings.name=Rotten Flesh Leggings
+item.rotten_flesh_boots.name=Rotten Flesh Boots
+
+//skeleton
+item.bone_helmet.name=Bone Helmet
+item.bone_chestplate.name=Bone Chest Plate
+item.bone_leggings.name=Bone Leggings
+item.bone_boots.name=Bone Boots
+
+//wither
+item.bone_wither_helmet.name=Bone Wither Helmet
+item.bone_wither_chestplate.name=Bone Wither Chest Plate
+item.bone_wither_leggings.name=Bone Wither Leggings
+item.bone_wither_boots.name=Bone Wither Boots
+
+//blocks
+tile.rotten_flesh_block.name=Rotten Flesh Block

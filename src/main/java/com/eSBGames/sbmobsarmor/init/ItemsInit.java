@@ -31,7 +31,7 @@ public class ItemsInit
 	public static final List<Item> ITEMS = new ArrayList<Item>();
 	
 	//zombie
-	public static final ArmorMaterial ARMOR_MATERIAL_ROTTEN_FLESH = EnumHelper.addArmorMaterial("armor_material_rotten_flesh", SBMobsArmor.MOD_ID + ":rotten_flesh", 10, new int[] {1, 2, 3, 1}, 10, SoundEvents.ITEM_ARMOR_EQUIP_LEATHER, 0f);
+	public static final ArmorMaterial ARMOR_MATERIAL_ROTTEN_FLESH = EnumHelper.addArmorMaterial("armor_material_rotten_flesh", SBMobsArmor.MOD_ID + ":rotten_flesh", 5, new int[] {1, 2, 3, 1}, 10, SoundEvents.ITEM_ARMOR_EQUIP_LEATHER, 0f);
 	public static final Item ROTTEN_FLESH_HELMET = new ArmorBase("rotten_flesh_helmet", ARMOR_MATERIAL_ROTTEN_FLESH, 1, EntityEquipmentSlot.HEAD);
 	public static final Item ROTTEN_FLESH_CHESTPLATE = new ArmorBase("rotten_flesh_chestplate", ARMOR_MATERIAL_ROTTEN_FLESH, 1, EntityEquipmentSlot.CHEST);
 	public static final Item ROTTEN_FLESH_LEGGINGS = new ArmorBase("rotten_flesh_leggings", ARMOR_MATERIAL_ROTTEN_FLESH, 2, EntityEquipmentSlot.LEGS);
@@ -46,14 +46,14 @@ public class ItemsInit
 	public static final ItemHoe BONE_HOE = new ToolHoe("bone_hoe", MATERIAL_BONE);
 	public static final ItemBow BONE_BOW = new ToolBow("bone_bow", MATERIAL_BONE);
 	
-	public static final ArmorMaterial ARMOR_MATERIAL_BONE = EnumHelper.addArmorMaterial("armor_material_bone", SBMobsArmor.MOD_ID + ":bone", 10, new int[] {2, 5, 6, 2}, 10, SoundEvents.ITEM_ARMOR_EQUIP_LEATHER, 0f);
+	public static final ArmorMaterial ARMOR_MATERIAL_BONE = EnumHelper.addArmorMaterial("armor_material_bone", SBMobsArmor.MOD_ID + ":bone", 15, new int[] {2, 5, 6, 2}, 10, SoundEvents.ITEM_ARMOR_EQUIP_LEATHER, 0f);
 	public static final Item BONE_HELMET = new ArmorBase("bone_helmet", ARMOR_MATERIAL_BONE, 1, EntityEquipmentSlot.HEAD);
 	public static final Item BONE_CHESTPLATE = new ArmorBase("bone_chestplate", ARMOR_MATERIAL_BONE, 1, EntityEquipmentSlot.CHEST);
 	public static final Item BONE_LEGGINGS = new ArmorBase("bone_leggings", ARMOR_MATERIAL_BONE, 2, EntityEquipmentSlot.LEGS);
 	public static final Item BONE_BOOTS = new ArmorBase("bone_boots", ARMOR_MATERIAL_BONE, 1, EntityEquipmentSlot.FEET);
 	
 	//wither
-	public static final ArmorMaterial ARMOR_MATERIAL_BONE_WITHER = EnumHelper.addArmorMaterial("armor_material_bone_wither", SBMobsArmor.MOD_ID + ":bone_wither", 10, new int[] {2, 5, 6, 2}, 10, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 0f);
+	public static final ArmorMaterial ARMOR_MATERIAL_BONE_WITHER = EnumHelper.addArmorMaterial("armor_material_bone_wither", SBMobsArmor.MOD_ID + ":bone_wither", 15, new int[] {2, 5, 6, 2}, 10, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 0f);
 	public static final Item BONE_WITHER_HELMET = new ArmorBase("bone_wither_helmet", ARMOR_MATERIAL_BONE_WITHER, 1, EntityEquipmentSlot.HEAD);
 	public static final Item BONE_WITHER_CHESTPLATE = new ArmorBase("bone_wither_chestplate", ARMOR_MATERIAL_BONE_WITHER, 1, EntityEquipmentSlot.CHEST);
 	public static final Item BONE_WITHER_LEGGINGS = new ArmorBase("bone_wither_leggings", ARMOR_MATERIAL_BONE_WITHER, 2, EntityEquipmentSlot.LEGS);
