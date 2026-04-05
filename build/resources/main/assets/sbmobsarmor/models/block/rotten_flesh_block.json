@@ -1,6 +1,0 @@
-{
-	"parent": "block/cube_all",
-	"textures": {
-		"all": "sbmobsarmor:blocks/rotten_flesh_block"
-	}
-}
