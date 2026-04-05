@@ -1,5 +1,5 @@
 {
 	"variants": {
-		"normal": { "model": "sbmobsarmor:rotten_flesh_block" }
+		"": { "model": "sbmobsarmor:block/rotten_flesh_block" }
 	}
 }

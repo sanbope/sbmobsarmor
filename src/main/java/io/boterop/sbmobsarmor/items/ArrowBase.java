@@ -1,40 +1,34 @@
 package io.boterop.sbmobsarmor.items;
 
-import net.minecraft.creativetab.CreativeTabs;
-import net.minecraft.entity.EntityLivingBase;
-import net.minecraft.entity.projectile.EntityArrow;
-import net.minecraft.entity.projectile.EntityTippedArrow;
-import net.minecraft.init.MobEffects;
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemStack;
-import net.minecraft.potion.PotionEffect;
-import net.minecraft.world.World;
+
+import net.minecraft.world.item.Item;
 
 public class ArrowBase extends Item
 {
-	private boolean isWither;
+	private final boolean isWither;
 
-	public ArrowBase(boolean isWither)
+	public ArrowBase(boolean isWither, Properties props)
 	{
-		this.isWither = isWither;
-		this.setCreativeTab(CreativeTabs.COMBAT);
+        super(props);
+        this.isWither = isWither;
+//		this.setCreativeTab(CreativeTabs.COMBAT);
 	}
 
-	public EntityArrow createArrow(World worldIn, ItemStack stack, EntityLivingBase shooter)
-	{
-		EntityTippedArrow entitytippedarrow = new EntityTippedArrow(worldIn, shooter);
-		entitytippedarrow.setPotionEffect(stack);
-
-		if (isWither)
-		{
-			int seconds = 10;
-			entitytippedarrow.addEffect(new PotionEffect(MobEffects.WITHER, seconds * 20, 0, false, true)); // Add custom PotionEffect
-		}
-		return entitytippedarrow;
-	}
-
-	public boolean isInfinite(ItemStack stack, ItemStack bow, net.minecraft.entity.player.EntityPlayer player)
-	{
-		return true;
-	}
+//	public EntityArrow createArrow(World worldIn, ItemStack stack, EntityLivingBase shooter)
+//	{
+//		EntityTippedArrow entitytippedarrow = new EntityTippedArrow(worldIn, shooter);
+//		entitytippedarrow.setPotionEffect(stack);
+//
+//		if (isWither)
+//		{
+//			int seconds = 10;
+//			entitytippedarrow.addEffect(new PotionEffect(MobEffects.WITHER, seconds * 20, 0, false, true)); // Add custom PotionEffect
+//		}
+//		return entitytippedarrow;
+//	}
+//
+//	public boolean isInfinite(ItemStack stack, ItemStack bow, net.minecraft.entity.player.EntityPlayer player)
+//	{
+//		return true;
+//	}
 }

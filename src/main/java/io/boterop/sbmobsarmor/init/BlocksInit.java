@@ -1,16 +1,26 @@
 package io.boterop.sbmobsarmor.init;
 
-import java.util.ArrayList;
-import java.util.List;
-
+import io.boterop.sbmobsarmor.SBMobsArmor;
 import io.boterop.sbmobsarmor.blocks.BlockBase;
+import net.minecraft.core.registries.Registries;
+import net.minecraft.resources.ResourceKey;
+import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.SoundType;
+import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.material.MapColor;
+import net.neoforged.neoforge.registries.DeferredBlock;
+import net.neoforged.neoforge.registries.DeferredRegister;
 
-import net.minecraft.block.Block;
-import net.minecraft.block.material.Material;
 
-public class BlocksInit
-{
-	public static final List<Block> BLOCKS = new ArrayList<Block>();
-	
-	public static final Block ROTTEN_FLESH_BLOCK = new BlockBase("rotten_flesh_block", Material.CLOTH);
+public class BlocksInit {
+    public static final DeferredRegister.Blocks BLOCKS = DeferredRegister.createBlocks(SBMobsArmor.MODID);
+
+    public static final DeferredBlock<Block> ROTTEN_FLESH = BLOCKS.register("rotten_flesh_block", registryName -> new BlockBase(BlockBehaviour.Properties.of()
+            .setId(ResourceKey.create(Registries.BLOCK, registryName))
+            .mapColor(MapColor.COLOR_BROWN)
+            .strength(0.5f, 0.5f)
+            .sound(SoundType.SLIME_BLOCK)
+            .randomTicks()
+            .noOcclusion()
+    ));
 }
