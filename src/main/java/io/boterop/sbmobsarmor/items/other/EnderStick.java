@@ -1,10 +1,10 @@
-package com.eSBGames.sbmobsarmor.items.other;
+package io.boterop.sbmobsarmor.items.other;
 
-import com.eSBGames.sbmobsarmor.SBMobsArmor;
-import com.eSBGames.sbmobsarmor.init.ItemsInit;
-import com.eSBGames.sbmobsarmor.items.EnderPearlBase;
-import com.eSBGames.sbmobsarmor.items.armor.ArmorBase;
-import com.eSBGames.sbmobsarmor.util.IHasModel;
+import io.boterop.sbmobsarmor.SBMobsArmor;
+import io.boterop.sbmobsarmor.init.ItemsInit;
+import io.boterop.sbmobsarmor.items.EnderPearlBase;
+import io.boterop.sbmobsarmor.items.armor.ArmorBase;
+import io.boterop.sbmobsarmor.util.IHasModel;
 
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.player.EntityPlayer;

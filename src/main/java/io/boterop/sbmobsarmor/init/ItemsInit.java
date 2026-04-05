@@ -1,16 +1,16 @@
-package com.eSBGames.sbmobsarmor.init;
+package io.boterop.sbmobsarmor.init;
 
 import java.util.List;
 
-import com.eSBGames.sbmobsarmor.SBMobsArmor;
-import com.eSBGames.sbmobsarmor.items.armor.ArmorBase;
-import com.eSBGames.sbmobsarmor.items.other.EnderStick;
-import com.eSBGames.sbmobsarmor.items.tools.ToolAxe;
-import com.eSBGames.sbmobsarmor.items.tools.ToolBow;
-import com.eSBGames.sbmobsarmor.items.tools.ToolHoe;
-import com.eSBGames.sbmobsarmor.items.tools.ToolPickaxe;
-import com.eSBGames.sbmobsarmor.items.tools.ToolSpade;
-import com.eSBGames.sbmobsarmor.items.tools.ToolSword;
+import io.boterop.sbmobsarmor.SBMobsArmor;
+import io.boterop.sbmobsarmor.items.armor.ArmorBase;
+import io.boterop.sbmobsarmor.items.other.EnderStick;
+import io.boterop.sbmobsarmor.items.tools.ToolAxe;
+import io.boterop.sbmobsarmor.items.tools.ToolBow;
+import io.boterop.sbmobsarmor.items.tools.ToolHoe;
+import io.boterop.sbmobsarmor.items.tools.ToolPickaxe;
+import io.boterop.sbmobsarmor.items.tools.ToolSpade;
+import io.boterop.sbmobsarmor.items.tools.ToolSword;
 
 import net.minecraft.init.SoundEvents;
 import net.minecraft.inventory.EntityEquipmentSlot;

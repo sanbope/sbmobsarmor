@@ -1,9 +1,9 @@
-package com.eSBGames.sbmobsarmor;
+package io.boterop.sbmobsarmor;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import com.eSBGames.sbmobsarmor.proxy.CommonProxy;
+import io.boterop.sbmobsarmor.proxy.CommonProxy;
 
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.player.EntityPlayer;
@@ -21,8 +21,8 @@ public class SBMobsArmor
 	public static final String MOD_ID = "sbmobsarmor";
 	public static final String NAME = "SB Mob's Armor";
 	public static final String VERSION = "1.12.2";
-	public static final String CLIENT_PROXY_CLASS = "com.eSBGames.sbmobsarmor.proxy.ClientProxy";
-	public static final String COMMON_PROXY_CLASS = "com.eSBGames.sbmobsarmor.proxy.CommonProxy";
+	public static final String CLIENT_PROXY_CLASS = "io.boterop.sbmobsarmor.proxy.ClientProxy";
+	public static final String COMMON_PROXY_CLASS = "io.boterop.sbmobsarmor.proxy.CommonProxy";
 
 	private static final Logger LOGGER = LogManager.getLogger();
 	

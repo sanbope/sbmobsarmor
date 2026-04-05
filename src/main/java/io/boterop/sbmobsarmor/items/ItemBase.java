@@ -1,8 +1,8 @@
-package com.eSBGames.sbmobsarmor.items;
+package io.boterop.sbmobsarmor.items;
 
-import com.eSBGames.sbmobsarmor.init.ItemsInit;
-import com.eSBGames.sbmobsarmor.util.IHasModel;
-import com.eSBGames.sbmobsarmor.SBMobsArmor;
+import io.boterop.sbmobsarmor.init.ItemsInit;
+import io.boterop.sbmobsarmor.util.IHasModel;
+import io.boterop.sbmobsarmor.SBMobsArmor;
 
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;

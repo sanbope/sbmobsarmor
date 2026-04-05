@@ -1,11 +1,11 @@
-package com.eSBGames.sbmobsarmor.items.armor;
+package io.boterop.sbmobsarmor.items.armor;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import com.eSBGames.sbmobsarmor.SBMobsArmor;
-import com.eSBGames.sbmobsarmor.init.ItemsInit;
-import com.eSBGames.sbmobsarmor.util.IHasModel;
+import io.boterop.sbmobsarmor.SBMobsArmor;
+import io.boterop.sbmobsarmor.init.ItemsInit;
+import io.boterop.sbmobsarmor.util.IHasModel;
 
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.EntityLivingBase;

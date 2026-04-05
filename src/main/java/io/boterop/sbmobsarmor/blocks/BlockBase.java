@@ -1,9 +1,9 @@
-package com.eSBGames.sbmobsarmor.blocks;
+package io.boterop.sbmobsarmor.blocks;
 
-import com.eSBGames.sbmobsarmor.init.BlocksInit;
-import com.eSBGames.sbmobsarmor.init.ItemsInit;
-import com.eSBGames.sbmobsarmor.util.IHasModel;
-import com.eSBGames.sbmobsarmor.SBMobsArmor;
+import io.boterop.sbmobsarmor.init.BlocksInit;
+import io.boterop.sbmobsarmor.init.ItemsInit;
+import io.boterop.sbmobsarmor.util.IHasModel;
+import io.boterop.sbmobsarmor.SBMobsArmor;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;

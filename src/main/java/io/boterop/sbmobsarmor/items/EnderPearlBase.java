@@ -1,4 +1,4 @@
-package com.eSBGames.sbmobsarmor.items;
+package io.boterop.sbmobsarmor.items;
 
 import net.minecraft.advancements.CriteriaTriggers;
 import net.minecraft.entity.EntityLivingBase;

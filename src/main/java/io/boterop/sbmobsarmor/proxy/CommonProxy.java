@@ -1,4 +1,4 @@
-package com.eSBGames.sbmobsarmor.proxy;
+package io.boterop.sbmobsarmor.proxy;
 
 import net.minecraft.item.Item;
 

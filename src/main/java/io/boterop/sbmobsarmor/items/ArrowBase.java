@@ -1,4 +1,4 @@
-package com.eSBGames.sbmobsarmor.items;
+package io.boterop.sbmobsarmor.items;
 
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.EntityLivingBase;

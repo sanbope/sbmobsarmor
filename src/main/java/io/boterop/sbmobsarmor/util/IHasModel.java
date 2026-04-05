@@ -1,4 +1,4 @@
-package com.eSBGames.sbmobsarmor.util;
+package io.boterop.sbmobsarmor.util;
 
 public interface IHasModel
 {

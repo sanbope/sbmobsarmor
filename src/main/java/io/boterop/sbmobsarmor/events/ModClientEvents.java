@@ -1,7 +1,7 @@
-package com.eSBGames.sbmobsarmor.events;
+package io.boterop.sbmobsarmor.events;
 
-import com.eSBGames.sbmobsarmor.SBMobsArmor;
-import com.eSBGames.sbmobsarmor.items.armor.ArmorBase;
+import io.boterop.sbmobsarmor.SBMobsArmor;
+import io.boterop.sbmobsarmor.items.armor.ArmorBase;
 
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.player.EntityPlayer;

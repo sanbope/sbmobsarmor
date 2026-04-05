@@ -1,9 +1,9 @@
-package com.eSBGames.sbmobsarmor.init;
+package io.boterop.sbmobsarmor.init;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import com.eSBGames.sbmobsarmor.blocks.BlockBase;
+import io.boterop.sbmobsarmor.blocks.BlockBase;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
