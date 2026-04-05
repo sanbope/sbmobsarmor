@@ -20,6 +20,33 @@ public class ItemsInit {
             ITEMS.register("rotten_flesh_block", registryName -> new BlockItem(BlocksInit.ROTTEN_FLESH.get(), new Item.Properties().setId(ResourceKey.create(Registries.ITEM, registryName))));
 
 	//zombie
+    public static final DeferredItem<Item> ROTTEN_FLESH_CHESTPLATE = ITEMS.registerItem(
+            "rotten_flesh_chestplate",
+            props -> new Item(
+                    props.humanoidArmor(
+                            Materials.ROTTEN_FLESH_MATERIAL,
+                            ArmorType.CHESTPLATE
+                    )
+            )
+    );
+    public static final DeferredItem<Item> ROTTEN_FLESH_LEGGINGS = ITEMS.registerItem(
+            "rotten_flesh_leggings",
+            props -> new Item(
+                    props.humanoidArmor(
+                            Materials.ROTTEN_FLESH_MATERIAL,
+                            ArmorType.LEGGINGS
+                    )
+            )
+    );
+    public static final DeferredItem<Item> ROTTEN_FLESH_BOOTS = ITEMS.registerItem(
+            "rotten_flesh_boots",
+            props -> new Item(
+                    props.humanoidArmor(
+                            Materials.ROTTEN_FLESH_MATERIAL,
+                            ArmorType.BOOTS
+                    )
+            )
+    );
     public static final DeferredItem<Item> ROTTEN_FLESH_HELMET = ITEMS.registerItem(
             "rotten_flesh_helmet",
             props -> new Item(

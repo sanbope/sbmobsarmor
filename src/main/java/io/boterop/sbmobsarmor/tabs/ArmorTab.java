@@ -23,6 +23,9 @@ public class ArmorTab {
                     .icon(() -> new ItemStack(ItemsInit.ROTTEN_FLESH_HELMET.get()))
                     .displayItems((params, output) -> {
                         output.accept(ItemsInit.ROTTEN_FLESH_HELMET.get());
+                        output.accept(ItemsInit.ROTTEN_FLESH_CHESTPLATE.get());
+                        output.accept(ItemsInit.ROTTEN_FLESH_LEGGINGS.get());
+                        output.accept(ItemsInit.ROTTEN_FLESH_BOOTS.get());
                     })
                     .build()
     );
