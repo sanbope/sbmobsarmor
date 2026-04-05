@@ -1,0 +1,31 @@
+{
+  "item.sbmobsarmor.bone_sword": "Bone Sword",
+  "item.sbmobsarmor.bone_shovel": "Bone Shovel",
+  "item.sbmobsarmor.bone_pickaxe": "Bone Pickaxe",
+  "item.sbmobsarmor.bone_hoe": "Bone Hoe",
+  "item.sbmobsarmor.bone_bow": "Bone Bow",
+  "item.sbmobsarmor.bone_axe": "Bone Axe",
+  "item.sbmobsarmor.ender_stick": "Ender Stick",
+
+  "item.sbmobsarmor.rotten_flesh_helmet": "Rotten Flesh Helmet",
+  "item.sbmobsarmor.rotten_flesh_chestplate": "Rotten Flesh Chest Plate",
+  "item.sbmobsarmor.rotten_flesh_leggings": "Rotten Flesh Leggings",
+  "item.sbmobsarmor.rotten_flesh_boots": "Rotten Flesh Boots",
+
+  "item.sbmobsarmor.bone_helmet": "Bone Helmet",
+  "item.sbmobsarmor.bone_chestplate": "Bone Chest Plate",
+  "item.sbmobsarmor.bone_leggings": "Bone Leggings",
+  "item.sbmobsarmor.bone_boots": "Bone Boots",
+
+  "item.sbmobsarmor.bone_wither_helmet": "Bone Wither Helmet",
+  "item.sbmobsarmor.bone_wither_chestplate": "Bone Wither Chest Plate",
+  "item.sbmobsarmor.bone_wither_leggings": "Bone Wither Leggings",
+  "item.sbmobsarmor.bone_wither_boots": "Bone Wither Boots",
+
+  "item.sbmobsarmor.ender_helmet": "Ender Helmet",
+  "item.sbmobsarmor.ender_chestplate": "Ender Chest Plate",
+  "item.sbmobsarmor.ender_leggings": "Ender Leggings",
+  "item.sbmobsarmor.ender_boots": "Ender Boots",
+
+  "block.sbmobsarmor.rotten_flesh_block": "Rotten Flesh Block"
+}

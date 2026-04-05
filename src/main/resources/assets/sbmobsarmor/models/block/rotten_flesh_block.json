@@ -1,6 +1,5 @@
 {
-	"parent": "block/cube_all",
-	"render_type": "cutout",
+	"parent": "minecraft:block/cube_all",
 	"textures": {
 		"all": "sbmobsarmor:block/rotten_flesh_block"
 	}

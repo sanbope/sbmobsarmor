@@ -1,7 +1,11 @@
 package io.boterop.sbmobsarmor.init;
 
 import io.boterop.sbmobsarmor.SBMobsArmor;
+import net.minecraft.core.registries.Registries;
+import net.minecraft.resources.ResourceKey;
 import net.minecraft.world.item.BlockItem;
+import net.minecraft.world.item.Item;
+import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
 import java.util.function.Supplier;
@@ -10,8 +14,8 @@ public class ItemsInit {
     public static final DeferredRegister.Items ITEMS =
             DeferredRegister.createItems(SBMobsArmor.MODID);
 
-    public static final Supplier<BlockItem> ROTTEN_FLESH_ITEM =
-            ITEMS.registerSimpleBlockItem("rotten_flesh_block", BlocksInit.ROTTEN_FLESH);
+    public static final DeferredItem<BlockItem> ROTTEN_FLESH_ITEM =
+            ITEMS.register("rotten_flesh_block", registryName -> new BlockItem(BlocksInit.ROTTEN_FLESH.get(), new Item.Properties().setId(ResourceKey.create(Registries.ITEM, registryName))));
 
 //	//zombie
 //	public static final ArmorMaterial ARMOR_MATERIAL_ROTTEN_FLESH = EnumHelper.addArmorMaterial("armor_material_rotten_flesh", SBMobsArmor.MODID + ":rotten_flesh", 5, new int[] {1, 2, 3, 1}, 10, SoundEvents.ITEM_ARMOR_EQUIP_LEATHER, 0f);

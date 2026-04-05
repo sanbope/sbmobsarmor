@@ -1,6 +1,6 @@
 {
 	"parent": "item/generated",
 	"textures": {
-		"layer0": "sbmobsarmor:items/rotten_flesh_boots"
+		"layer0": "sbmobsarmor:item/rotten_flesh_boots"
 	}
 }

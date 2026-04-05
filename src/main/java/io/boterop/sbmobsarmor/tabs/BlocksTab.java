@@ -21,9 +21,9 @@ public class BlocksTab {
             () -> CreativeModeTab.builder()
                     .title(Component.literal("SB Mobs Armor"))
                     .withTabsBefore(CreativeModeTabs.COMBAT)
-                    .icon(() -> new ItemStack(BlocksInit.ROTTEN_FLESH.get()))
+                    .icon(() -> new ItemStack(ItemsInit.ROTTEN_FLESH_ITEM.get()))
                     .displayItems((params, output) -> {
-                        output.accept(BlocksInit.ROTTEN_FLESH.get());
+                        output.accept(ItemsInit.ROTTEN_FLESH_ITEM.get());
                     })
                     .build()
     );
