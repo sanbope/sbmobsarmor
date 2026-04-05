@@ -2,6 +2,7 @@ package io.boterop.sbmobsarmor;
 
 import io.boterop.sbmobsarmor.init.BlocksInit;
 import io.boterop.sbmobsarmor.init.ItemsInit;
+import io.boterop.sbmobsarmor.tabs.ArmorTab;
 import io.boterop.sbmobsarmor.tabs.BlocksTab;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.fml.common.Mod;
@@ -14,5 +15,6 @@ public class SBMobsArmor {
 		BlocksInit.BLOCKS.register(modEventBus);
 		ItemsInit.ITEMS.register(modEventBus);
 		BlocksTab.TABS.register(modEventBus);
+		ArmorTab.TABS.register(modEventBus);
 	}
 }
