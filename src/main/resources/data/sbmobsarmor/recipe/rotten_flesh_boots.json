@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "B": "sbmobsarmor:rotten_flesh_block"
+  },
+  "pattern": [
+    "   ",
+    "B B",
+    "B B"
+  ],
+  "result": {
+    "id": "sbmobsarmor:rotten_flesh_boots",
+    "count": 1
+  }
+}
