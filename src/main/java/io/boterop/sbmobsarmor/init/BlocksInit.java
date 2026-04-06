@@ -22,5 +22,7 @@ public class BlocksInit {
             .sound(SoundType.SLIME_BLOCK)
             .randomTicks()
             .noOcclusion()
+            .friction(0.4f)
+            .jumpFactor(0.7f)
     ));
 }
