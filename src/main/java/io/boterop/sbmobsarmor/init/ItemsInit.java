@@ -1,10 +1,12 @@
 package io.boterop.sbmobsarmor.init;
 
 import io.boterop.sbmobsarmor.SBMobsArmor;
+import io.boterop.sbmobsarmor.items.Materials;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.equipment.ArmorType;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
@@ -17,13 +19,48 @@ public class ItemsInit {
     public static final DeferredItem<BlockItem> ROTTEN_FLESH_ITEM =
             ITEMS.register("rotten_flesh_block", registryName -> new BlockItem(BlocksInit.ROTTEN_FLESH.get(), new Item.Properties().setId(ResourceKey.create(Registries.ITEM, registryName))));
 
-//	//zombie
-//	public static final ArmorMaterial ARMOR_MATERIAL_ROTTEN_FLESH = EnumHelper.addArmorMaterial("armor_material_rotten_flesh", SBMobsArmor.MODID + ":rotten_flesh", 5, new int[] {1, 2, 3, 1}, 10, SoundEvents.ITEM_ARMOR_EQUIP_LEATHER, 0f);
+	//zombie
+    public static final DeferredItem<Item> ROTTEN_FLESH_CHESTPLATE = ITEMS.registerItem(
+            "rotten_flesh_chestplate",
+            props -> new Item(
+                    props.humanoidArmor(
+                            Materials.ROTTEN_FLESH_MATERIAL,
+                            ArmorType.CHESTPLATE
+                    )
+            )
+    );
+    public static final DeferredItem<Item> ROTTEN_FLESH_LEGGINGS = ITEMS.registerItem(
+            "rotten_flesh_leggings",
+            props -> new Item(
+                    props.humanoidArmor(
+                            Materials.ROTTEN_FLESH_MATERIAL,
+                            ArmorType.LEGGINGS
+                    )
+            )
+    );
+    public static final DeferredItem<Item> ROTTEN_FLESH_BOOTS = ITEMS.registerItem(
+            "rotten_flesh_boots",
+            props -> new Item(
+                    props.humanoidArmor(
+                            Materials.ROTTEN_FLESH_MATERIAL,
+                            ArmorType.BOOTS
+                    )
+            )
+    );
+    public static final DeferredItem<Item> ROTTEN_FLESH_HELMET = ITEMS.registerItem(
+            "rotten_flesh_helmet",
+            props -> new Item(
+                    props.humanoidArmor(
+                            Materials.ROTTEN_FLESH_MATERIAL,
+                            ArmorType.HELMET
+                    )
+            )
+    );
 //	public static final Item ROTTEN_FLESH_HELMET = new ArmorBase("rotten_flesh_helmet", ARMOR_MATERIAL_ROTTEN_FLESH, 1, EntityEquipmentSlot.HEAD);
 //	public static final Item ROTTEN_FLESH_CHESTPLATE = new ArmorBase("rotten_flesh_chestplate", ARMOR_MATERIAL_ROTTEN_FLESH, 1, EntityEquipmentSlot.CHEST);
 //	public static final Item ROTTEN_FLESH_LEGGINGS = new ArmorBase("rotten_flesh_leggings", ARMOR_MATERIAL_ROTTEN_FLESH, 2, EntityEquipmentSlot.LEGS);
 //	public static final Item ROTTEN_FLESH_BOOTS = new ArmorBase("rotten_flesh_boots", ARMOR_MATERIAL_ROTTEN_FLESH, 1, EntityEquipmentSlot.FEET);
-//
+
 //	//skeleton
 //	public static final ToolMaterial MATERIAL_BONE = EnumHelper.addToolMaterial("material_bone", 2, 59, 6.0F, 2.0F, 14);
 //	public static final ItemSword BONE_SWORD = new ToolSword("bone_sword", MATERIAL_BONE);
