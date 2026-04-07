@@ -10,6 +10,7 @@ import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.item.ItemStack;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
+import java.util.Arrays;
 import java.util.function.Supplier;
 
 public class ArmorTab {
@@ -20,12 +21,10 @@ public class ArmorTab {
             () -> CreativeModeTab.builder()
                     .title(Component.literal("SB Mobs Armor"))
                     .withTabsBefore(CreativeModeTabs.SPAWN_EGGS)
-                    .icon(() -> new ItemStack(ItemsInit.ROTTEN_FLESH_HELMET.get()))
+                    .icon(() -> new ItemStack(ItemsInit.ROTTEN_FLESH_ARMOR[0].get()))
                     .displayItems((params, output) -> {
-                        output.accept(ItemsInit.ROTTEN_FLESH_HELMET.get());
-                        output.accept(ItemsInit.ROTTEN_FLESH_CHESTPLATE.get());
-                        output.accept(ItemsInit.ROTTEN_FLESH_LEGGINGS.get());
-                        output.accept(ItemsInit.ROTTEN_FLESH_BOOTS.get());
+                        Arrays.stream(ItemsInit.ROTTEN_FLESH_ARMOR).forEach(item -> output.accept(item.get()));
+                        Arrays.stream(ItemsInit.BONE_ARMOR).forEach(item -> output.accept(item.get()));
                     })
                     .build()
     );

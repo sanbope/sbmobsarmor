@@ -32,7 +32,24 @@ public class Materials {
             0,
             0,
             SoundEvents.ARMOR_EQUIP_GENERIC,
-            Tags.Items.INGOTS_COPPER);
+            Tags.Items.LEATHERS);
+
+    public static final ArmorMaterial BONE_MATERIAL = create(
+            "bone",
+            Util.make(new EnumMap<>(ArmorType.class), map -> {
+                map.put(ArmorType.BOOTS, 3);
+                map.put(ArmorType.LEGGINGS, 5);
+                map.put(ArmorType.CHESTPLATE, 7);
+                map.put(ArmorType.HELMET, 3);
+                map.put(ArmorType.BODY, 5);
+            }),
+            2,
+            1,
+            0,
+            0,
+            SoundEvents.ARMOR_EQUIP_GENERIC,
+            Tags.Items.BONES
+    );
 
     private static ArmorMaterial create(String name, EnumMap<ArmorType, Integer> defense, int durability, int enchantability, float toughness, float knockbackResistance, Holder<SoundEvent> equipSound, TagKey<Item> repairItem) {
         ResourceKey<EquipmentAsset> asset = ResourceKey.create(EquipmentAssets.ROOT_ID, Identifier.fromNamespaceAndPath(SBMobsArmor.MODID, name));
