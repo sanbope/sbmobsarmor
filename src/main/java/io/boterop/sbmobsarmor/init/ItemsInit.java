@@ -6,8 +6,7 @@ import io.boterop.sbmobsarmor.items.Materials;
 import net.minecraft.core.component.DataComponents;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceKey;
-import net.minecraft.world.item.BlockItem;
-import net.minecraft.world.item.Item;
+import net.minecraft.world.item.*;
 import net.minecraft.world.item.component.ChargedProjectiles;
 import net.minecraft.world.item.equipment.ArmorMaterial;
 import net.minecraft.world.item.equipment.ArmorType;
@@ -22,10 +21,15 @@ public class ItemsInit {
             ITEMS.register("rotten_flesh_block", registryName -> new BlockItem(BlocksInit.ROTTEN_FLESH.get(), new Item.Properties().setId(ResourceKey.create(Registries.ITEM, registryName))));
 
     //zombie
-    public static final DeferredItem<Item>[] ROTTEN_FLESH_ARMOR = registerEntireArmor("rotten_flesh", Materials.ROTTEN_FLESH_MATERIAL);
+    public static final DeferredItem<Item>[] ROTTEN_FLESH_ARMOR = registerEntireArmor("rotten_flesh", Materials.ROTTEN_FLESH_ARMOR_MATERIAL);
 
     //skeleton
-    public static final DeferredItem<Item>[] BONE_ARMOR = registerEntireArmor("bone", Materials.BONE_MATERIAL);
+    public static final DeferredItem<Item>[] BONE_ARMOR = registerEntireArmor("bone", Materials.BONE_ARMOR_MATERIAL);
+    public static final DeferredItem<Item> BONE_SWORD = ITEMS.registerItem("bone_sword", props -> new Item(props.sword(Materials.BONE_TOOL_MATERIAL, 3.0F, -2.4F)));
+    public static final DeferredItem<Item> BONE_SHOVEL = ITEMS.registerItem("bone_shovel", p -> new ShovelItem(Materials.BONE_TOOL_MATERIAL, 1.5F, -3.0F, p));
+    public static final DeferredItem<Item> BONE_PICKAXE = ITEMS.registerItem("bone_pickaxe", props -> new Item(props.pickaxe(Materials.BONE_TOOL_MATERIAL, 1.0F, -2.8F)));
+    public static final DeferredItem<Item> BONE_AXE = ITEMS.registerItem("bone_axe", p -> new AxeItem(Materials.BONE_TOOL_MATERIAL, 6.0F, -3.1F, p));
+    public static final DeferredItem<Item> BONE_HOE = ITEMS.registerItem("bone_hoe", p -> new HoeItem(Materials.BONE_TOOL_MATERIAL, -2.0F, -1.0F, p));
     public static final DeferredItem<Item> BONE_BOW = ITEMS.registerItem("bone_bow", props -> new BoneBow(props.durability(384).enchantable(1)));
 
     private static DeferredItem<Item>[] registerEntireArmor(String name, ArmorMaterial material) {
