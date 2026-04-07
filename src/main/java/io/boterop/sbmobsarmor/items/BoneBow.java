@@ -77,6 +77,7 @@ public class BoneBow extends BowItem {
 
                     level.playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.ARROW_SHOOT, SoundSource.PLAYERS, 1.0F, 1.0F / (level.getRandom().nextFloat() * 0.4F + 1.2F) + pow * 0.5F);
                     player.awardStat(Stats.ITEM_USED.get(this));
+                    itemStack.hurtAndBreak(1, player, player.getUsedItemHand().asEquipmentSlot());
                     return true;
                 }
             }

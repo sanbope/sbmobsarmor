@@ -3,10 +3,12 @@ package io.boterop.sbmobsarmor.init;
 import io.boterop.sbmobsarmor.SBMobsArmor;
 import io.boterop.sbmobsarmor.items.BoneBow;
 import io.boterop.sbmobsarmor.items.Materials;
+import net.minecraft.core.component.DataComponents;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.component.ChargedProjectiles;
 import net.minecraft.world.item.equipment.ArmorMaterial;
 import net.minecraft.world.item.equipment.ArmorType;
 import net.neoforged.neoforge.registries.DeferredItem;
@@ -24,14 +26,14 @@ public class ItemsInit {
 
     //skeleton
     public static final DeferredItem<Item>[] BONE_ARMOR = registerEntireArmor("bone", Materials.BONE_MATERIAL);
-    public static final DeferredItem<Item> BONE_BOW = ITEMS.registerItem("bone_bow", BoneBow::new);
+    public static final DeferredItem<Item> BONE_BOW = ITEMS.registerItem("bone_bow", props -> new BoneBow(props.durability(384).enchantable(1)));
 
     private static DeferredItem<Item>[] registerEntireArmor(String name, ArmorMaterial material) {
-        return new DeferredItem[] {
-                registerArmor(name+"_helmet", material, ArmorType.HELMET),
-                registerArmor(name+"_chestplate", material, ArmorType.CHESTPLATE),
-                registerArmor(name+"_leggings", material, ArmorType.LEGGINGS),
-                registerArmor(name+"_boots", material, ArmorType.BOOTS)
+        return new DeferredItem[]{
+                registerArmor(name + "_helmet", material, ArmorType.HELMET),
+                registerArmor(name + "_chestplate", material, ArmorType.CHESTPLATE),
+                registerArmor(name + "_leggings", material, ArmorType.LEGGINGS),
+                registerArmor(name + "_boots", material, ArmorType.BOOTS)
         };
     }
 
