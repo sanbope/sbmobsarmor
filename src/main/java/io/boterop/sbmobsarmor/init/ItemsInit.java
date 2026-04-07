@@ -1,6 +1,7 @@
 package io.boterop.sbmobsarmor.init;
 
 import io.boterop.sbmobsarmor.SBMobsArmor;
+import io.boterop.sbmobsarmor.items.BoneBow;
 import io.boterop.sbmobsarmor.items.Materials;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceKey;
@@ -10,8 +11,6 @@ import net.minecraft.world.item.equipment.ArmorMaterial;
 import net.minecraft.world.item.equipment.ArmorType;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
-
-import java.util.function.Supplier;
 
 public class ItemsInit {
     public static final DeferredRegister.Items ITEMS =
@@ -25,6 +24,7 @@ public class ItemsInit {
 
     //skeleton
     public static final DeferredItem<Item>[] BONE_ARMOR = registerEntireArmor("bone", Materials.BONE_MATERIAL);
+    public static final DeferredItem<Item> BONE_BOW = ITEMS.registerItem("bone_bow", BoneBow::new);
 
     private static DeferredItem<Item>[] registerEntireArmor(String name, ArmorMaterial material) {
         return new DeferredItem[] {
