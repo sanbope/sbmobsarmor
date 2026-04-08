@@ -1,7 +1,6 @@
 package io.boterop.sbmobsarmor.items;
 
 import io.boterop.sbmobsarmor.entities.BoneArrow;
-import io.boterop.sbmobsarmor.init.EntitiesInit;
 import io.boterop.sbmobsarmor.utils.Armor;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.sounds.SoundEvents;
@@ -23,16 +22,16 @@ public class BoneBow extends BowItem {
 
     @Override
     public InteractionResult use(Level level, Player player, InteractionHand hand) {
-        ItemStack itemStack = player.getItemInHand(hand);
         boolean hasBoneArmor = Armor.hasFullArmor(player, "sbmobsarmor:bone");
-        boolean foundProjectile = !player.getProjectile(itemStack).isEmpty();
-        InteractionResult ret = EventHooks.onArrowNock(itemStack, level, player, hand, foundProjectile);
-        if (ret != null) {
-            return ret;
+        if (!hasBoneArmor) {
+            return super.use(level, player, hand);
         }
 
-        if (!hasBoneArmor && !player.hasInfiniteMaterials() && !foundProjectile) {
-            return InteractionResult.FAIL;
+        ItemStack itemStack = player.getItemInHand(hand);
+
+        InteractionResult ret = EventHooks.onArrowNock(itemStack, level, player, hand, true);
+        if (ret != null) {
+            return ret;
         }
 
         player.startUsingItem(hand);
