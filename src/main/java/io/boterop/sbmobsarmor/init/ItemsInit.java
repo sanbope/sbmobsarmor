@@ -1,16 +1,17 @@
 package io.boterop.sbmobsarmor.init;
 
 import io.boterop.sbmobsarmor.SBMobsArmor;
+import io.boterop.sbmobsarmor.items.BoneBow;
 import io.boterop.sbmobsarmor.items.Materials;
+import net.minecraft.core.component.DataComponents;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceKey;
-import net.minecraft.world.item.BlockItem;
-import net.minecraft.world.item.Item;
+import net.minecraft.world.item.*;
+import net.minecraft.world.item.component.ChargedProjectiles;
+import net.minecraft.world.item.equipment.ArmorMaterial;
 import net.minecraft.world.item.equipment.ArmorType;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
-
-import java.util.function.Supplier;
 
 public class ItemsInit {
     public static final DeferredRegister.Items ITEMS =
@@ -19,56 +20,31 @@ public class ItemsInit {
     public static final DeferredItem<BlockItem> ROTTEN_FLESH_ITEM =
             ITEMS.register("rotten_flesh_block", registryName -> new BlockItem(BlocksInit.ROTTEN_FLESH.get(), new Item.Properties().setId(ResourceKey.create(Registries.ITEM, registryName))));
 
-	//zombie
-    public static final DeferredItem<Item> ROTTEN_FLESH_CHESTPLATE = ITEMS.registerItem(
-            "rotten_flesh_chestplate",
-            props -> new Item(
-                    props.humanoidArmor(
-                            Materials.ROTTEN_FLESH_MATERIAL,
-                            ArmorType.CHESTPLATE
-                    )
-            )
-    );
-    public static final DeferredItem<Item> ROTTEN_FLESH_LEGGINGS = ITEMS.registerItem(
-            "rotten_flesh_leggings",
-            props -> new Item(
-                    props.humanoidArmor(
-                            Materials.ROTTEN_FLESH_MATERIAL,
-                            ArmorType.LEGGINGS
-                    )
-            )
-    );
-    public static final DeferredItem<Item> ROTTEN_FLESH_BOOTS = ITEMS.registerItem(
-            "rotten_flesh_boots",
-            props -> new Item(
-                    props.humanoidArmor(
-                            Materials.ROTTEN_FLESH_MATERIAL,
-                            ArmorType.BOOTS
-                    )
-            )
-    );
-    public static final DeferredItem<Item> ROTTEN_FLESH_HELMET = ITEMS.registerItem(
-            "rotten_flesh_helmet",
-            props -> new Item(
-                    props.humanoidArmor(
-                            Materials.ROTTEN_FLESH_MATERIAL,
-                            ArmorType.HELMET
-                    )
-            )
-    );
-//	public static final Item ROTTEN_FLESH_HELMET = new ArmorBase("rotten_flesh_helmet", ARMOR_MATERIAL_ROTTEN_FLESH, 1, EntityEquipmentSlot.HEAD);
-//	public static final Item ROTTEN_FLESH_CHESTPLATE = new ArmorBase("rotten_flesh_chestplate", ARMOR_MATERIAL_ROTTEN_FLESH, 1, EntityEquipmentSlot.CHEST);
-//	public static final Item ROTTEN_FLESH_LEGGINGS = new ArmorBase("rotten_flesh_leggings", ARMOR_MATERIAL_ROTTEN_FLESH, 2, EntityEquipmentSlot.LEGS);
-//	public static final Item ROTTEN_FLESH_BOOTS = new ArmorBase("rotten_flesh_boots", ARMOR_MATERIAL_ROTTEN_FLESH, 1, EntityEquipmentSlot.FEET);
+    //zombie
+    public static final DeferredItem<Item>[] ROTTEN_FLESH_ARMOR = registerEntireArmor("rotten_flesh", Materials.ROTTEN_FLESH_ARMOR_MATERIAL);
 
-//	//skeleton
-//	public static final ToolMaterial MATERIAL_BONE = EnumHelper.addToolMaterial("material_bone", 2, 59, 6.0F, 2.0F, 14);
-//	public static final ItemSword BONE_SWORD = new ToolSword("bone_sword", MATERIAL_BONE);
-//	public static final ItemSpade BONE_SHOVEL = new ToolSpade("bone_shovel", MATERIAL_BONE);
-//	public static final ItemPickaxe BONE_PICKAXE = new ToolPickaxe("bone_pickaxe", MATERIAL_BONE);
-//	public static final ItemAxe BONE_AXE = new ToolAxe("bone_axe", MATERIAL_BONE, 3f, -3.2f);
-//	public static final ItemHoe BONE_HOE = new ToolHoe("bone_hoe", MATERIAL_BONE);
-//	public static final ItemBow BONE_BOW = new ToolBow("bone_bow", MATERIAL_BONE);
+    //skeleton
+    public static final DeferredItem<Item>[] BONE_ARMOR = registerEntireArmor("bone", Materials.BONE_ARMOR_MATERIAL);
+    public static final DeferredItem<Item> BONE_SWORD = ITEMS.registerItem("bone_sword", props -> new Item(props.sword(Materials.BONE_TOOL_MATERIAL, 3.0F, -2.4F)));
+    public static final DeferredItem<Item> BONE_SHOVEL = ITEMS.registerItem("bone_shovel", p -> new ShovelItem(Materials.BONE_TOOL_MATERIAL, 1.5F, -3.0F, p));
+    public static final DeferredItem<Item> BONE_PICKAXE = ITEMS.registerItem("bone_pickaxe", props -> new Item(props.pickaxe(Materials.BONE_TOOL_MATERIAL, 1.0F, -2.8F)));
+    public static final DeferredItem<Item> BONE_AXE = ITEMS.registerItem("bone_axe", p -> new AxeItem(Materials.BONE_TOOL_MATERIAL, 6.0F, -3.1F, p));
+    public static final DeferredItem<Item> BONE_HOE = ITEMS.registerItem("bone_hoe", p -> new HoeItem(Materials.BONE_TOOL_MATERIAL, -2.0F, -1.0F, p));
+    public static final DeferredItem<Item> BONE_BOW = ITEMS.registerItem("bone_bow", props -> new BoneBow(props.durability(384).enchantable(1)));
+
+    private static DeferredItem<Item>[] registerEntireArmor(String name, ArmorMaterial material) {
+        return new DeferredItem[]{
+                registerArmor(name + "_helmet", material, ArmorType.HELMET),
+                registerArmor(name + "_chestplate", material, ArmorType.CHESTPLATE),
+                registerArmor(name + "_leggings", material, ArmorType.LEGGINGS),
+                registerArmor(name + "_boots", material, ArmorType.BOOTS)
+        };
+    }
+
+    private static DeferredItem<Item> registerArmor(String name, ArmorMaterial material, ArmorType type) {
+        return ITEMS.registerItem(name, props -> new Item(props.humanoidArmor(material, type)));
+    }
+
 //
 //	public static final ArmorMaterial ARMOR_MATERIAL_BONE = EnumHelper.addArmorMaterial("armor_material_bone", SBMobsArmor.MODID + ":bone", 15, new int[] {2, 5, 6, 2}, 10, SoundEvents.ITEM_ARMOR_EQUIP_LEATHER, 0f);
 //	public static final Item BONE_HELMET = new ArmorBase("bone_helmet", ARMOR_MATERIAL_BONE, 1, EntityEquipmentSlot.HEAD);

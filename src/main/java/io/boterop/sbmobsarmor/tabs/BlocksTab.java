@@ -1,6 +1,5 @@
 package io.boterop.sbmobsarmor.tabs;
 
-
 import io.boterop.sbmobsarmor.SBMobsArmor;
 import io.boterop.sbmobsarmor.init.ItemsInit;
 import net.minecraft.core.registries.BuiltInRegistries;

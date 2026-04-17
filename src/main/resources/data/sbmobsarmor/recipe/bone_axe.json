@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "B": "minecraft:bone_block",
+    "S": "minecraft:bone"
+  },
+  "pattern": [
+    "BB ",
+    "BS ",
+    " S "
+  ],
+  "result": {
+    "id": "sbmobsarmor:bone_axe",
+    "count": 1
+  }
+}

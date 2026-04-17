@@ -1,0 +1,11 @@
+{
+  "model": {
+    "type": "minecraft:model",
+    "model": "sbmobsarmor:item/bone_bow"
+  },
+  "overrides": [
+    { "predicate": { "pulling": 1 }, "model": "sbmobsarmor:item/bone_axe" },
+    { "predicate": { "pulling": 1, "pull": 0.65 }, "model": "sbmobsarmor:item/bone_sword" },
+    { "predicate": { "pulling": 1, "pull": 0.9 }, "model": "sbmobsarmor:item/bone_hoe" }
+  ]
+}

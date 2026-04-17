@@ -1,0 +1,14 @@
+{
+  "layers": {
+    "humanoid": [
+      {
+        "texture": "sbmobsarmor:bone/outer"
+      }
+    ],
+    "humanoid_leggings": [
+      {
+        "texture": "sbmobsarmor:bone/inner"
+      }
+    ]
+  }
+}
